@@ -41,8 +41,8 @@ async def get_logs():
         sub_id = await w3.eth.subscribe(
             "logs",
             {
-                "address": w3.to_checksum_address(WETH_ADDRESS),
-                "topics": [TOPIC_TRANSFER]
+                "address": w3.to_checksum_address(WETH_ADDRESS), # сюда указываем контракт который мы слушаем
+                "topics": [TOPIC_TRANSFER] # сюда сигнатуру
             },
 
         )
