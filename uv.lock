@@ -174,12 +174,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "dotenv" },
+    { name = "eth-abi" },
     { name = "web3" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "eth-abi", specifier = ">=6.0.0" },
     { name = "web3", specifier = ">=8.0.0" },
 ]
 
